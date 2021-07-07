@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM - JSONServer</title>
+    <link rel="stylesheet" href="css/tailwind.min.css">
+</head>
+<body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+        <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-teal-600 px-5 py-10">
+            <h1 class="uppercase text-white tracking-wide text-2xl  font-bold mt-2">CRM - JSONServer</h1>
+            <p class="mt-10 text-white">Registro de personas con el CRM - JSONServer</p>
+            <nav class="mt-8">
+                <a  
+                    href="index.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-700 hover:text-yellow-400 "
+                >Personas</a>
+                <a 
+                    href="nuevo-cliente.html" 
+                    class="px-3 py-1 text-white block hover:bg-teal-900 mt-2 hover:text-yellow-400 bg-teal-700"
+                >Nueva Persona</a>
+            </nav>
+        </aside> <!--sidebar-->
+        <main class="md:w-3/5  xl:w-4/5 px-5 py-10 bg-gray-200">
+            <h2 class="text-3xl font-light text-center">Nueva Persona</h2>
+
+            <div class="flex flex-col mt-10 items-center">
+                <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12">
+                    <div class=" shadow overflow-hidden sm:rounded-lg border-b border-gray-200 ">
+                        <form id="formulario" class="bg-white p-3" method="POST">
+                            <div class="padre border border-color: rgba(0, 0, 0, var(--tw-border-opacity)) p-10 m-1 bg-blue-200">
+                                <h6>Datos padre</h6>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre Padre</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="nombre_padre"
+                                        name="nombre_padre"
+                                        type="text"
+                                        placeholder="Nombre Padre"
+                                    />
+                                </div>
+                            
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Apellidos padre</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="apellidos_padre"
+                                        name="apellidos_padre"
+                                        type="text"
+                                        placeholder="apellidos_padre"
+                                    />
+                                </div>
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Fecha Naciminto</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="feha_nac_p"
+                                        name="feha_nac_p"
+                                        type="date"
+                                        placeholder="Fecha nacimiento padre"
+                                    />
+                                </div>
+    
+    
+                             
+                            </div>
+                            <div class="padre border border-color: rgba(0, 0, 0, var(--tw-border-opacity)) p-10 m-1  bg-pink-200">
+                                <h6>Datos madre</h6>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre Madre</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="nombre_madre"
+                                        name="nombre_madre"
+                                        type="text"
+                                        placeholder="nombre madre "
+                                    />
+                                </div>
+                            
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Apellidos madre</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="apellidos_madre"
+                                        name="apellidos_madre"
+                                        type="text"
+                                        placeholder="apellidos Madre"
+                                    />
+                                </div>
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Fecha Naciminto</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="feha_nac_m"
+                                        name="feha_nac_m"
+                                        type="date"
+                                        placeholder="feha nacimiento madre"
+                                    />
+                                </div>
+    
+    
+                             
+                            </div>
+                            <div class="padre border border-color: rgba(0, 0, 0, var(--tw-border-opacity)) p-10 m-1  bg-orange-200">
+                                <h6>Datos nueva persona</h6>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre">Nombre nueva persona</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="nombre_nueva_persona"
+                                        name="nombre_nueva_persona"
+                                        type="text"
+                                        placeholder="Nombre nueva persona"
+                                    />
+                                </div>
+                            
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="telefono">Apellidos nueva persoan</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="apellidos_Nueva_persona"
+                                        name="apellidos_Nueva_persona"
+                                        type="text"
+                                        placeholder="apellidos nueva persona"
+                                    />
+                                </div>
+    
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Fecha Naciminto</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="feha_nac_b"
+                                        name="feha_nac_b"
+                                        type="date"
+                                        placeholder="feha nacimiento nueva persona"
+                                    />
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Hora nacimiento</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="hora_nac"
+                                        name="hora_nac"
+                                        type="time"
+                                        placeholder="hora nacimiento nueva presona"
+                                    />
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-gray-700 text-sm font-bold mb-2" for="empresa">Lugar de nacimiento</label>
+                                    <input 
+                                        class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                                        id="Lugarnac"
+                                        name="Lugarnac"
+                                        type="text"
+                                        placeholder="Lugar nacimiento"
+                                    />
+                                </div>
+    
+    
+                             
+                            </div>
+                            
+                            <input
+                            type="submit"
+                            class="bg-teal-600 hover:bg-teal-900 w-full mt-5 p-2 text-white uppercase font-bold"
+                            value="Agregar Nueva persona"
+                        />
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="js/nuevocliente.js" type="module"></script>
+</body>
+</html>
