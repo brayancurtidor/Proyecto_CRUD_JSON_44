@@ -1,32 +1,18 @@
 {
   "Personass": [
     {
-      "nombrepinput": "Juan",
-      "apellidopinput": "Orozco",
-      "Fechanacpinput": "2021-07-08",
-      "nombreMinput": "Julia",
-      "apellidosMinput": "Perez",
-      "FechanacMinput": "2021-07-12",
-      "nombreNinput": "Angel Armando",
-      "apellidosNinput": "Orozco Perez",
-      "FechaNacNinput": "2021-07-30",
-      "HoranacNinput": "01:31",
-      "LugarNacNinput": "Zona 9",
-      "id": 3
-    },
-    {
-      "nombrepinput": "ALejandros",
-      "apellidopinput": "Magnos",
-      "Fechanacpinput": "2021-07-25",
-      "nombreMinputs": "Claudia",
-      "apellidosMinput": "Servantes",
-      "FechanacMinput": "2021-07-26",
-      "nombreNinput": "Alejandro segundo",
+      "nombrepinput": "ALejandro",
+      "apellidopinput": "Magno",
+      "Fechanacpinput": "2021-08-02",
+      "nombreMinput": "Claudia",
+      "apellidosMinput": "Cervantes",
+      "FechanacMinput": "2021-07-08",
+      "nombreNinput": "Alejandro II",
       "apellidosNinput": "Magno Guitierres",
-      "FechaNacNinput": "2021-07-26",
-      "HoranacNinput": "23:48",
-      "LugarNacNinput": "FRancia",
-      "id": 4
+      "FechaNacNinput": "2021-07-28",
+      "HoranacNinput": "04:41",
+      "LugarNacNinput": "Zona 9",
+      "id": 1
     }
   ]
 }

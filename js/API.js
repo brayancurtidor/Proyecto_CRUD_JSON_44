@@ -63,6 +63,7 @@ export const editarPerosna=async (personaeditada)=>{
                 'Content-Type':'application/json'
             }
         });
+        window.location.href='index.html'
         
         //console.log(personaeditada) //mostra el objeto desde la api
         

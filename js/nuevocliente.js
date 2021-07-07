@@ -45,7 +45,7 @@ import {nuevapersona} from './API.js'
             }     
                 nuevapersona(nuevapersonaobjeto);
         }
-//actualizar un registro
+
 
 
 

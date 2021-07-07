@@ -32,7 +32,7 @@ import {mostraAlerta,validar}from './funciones.js'
             nombrepinput:nombrepinputs.value,
             apellidopinput:apellidopinputs.value,
             Fechanacpinput:Fechanacpinputs.value,
-            nombreMinputs:nombreMinputs.value,
+            nombreMinput:nombreMinputs.value,
             apellidosMinput:apellidosMinputs.value,
             FechanacMinput:FechanacMinputs.value,
             nombreNinput:nombreNinputs.value,
